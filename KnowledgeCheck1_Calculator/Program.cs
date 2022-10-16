@@ -57,8 +57,8 @@ namespace KnowledgeCheck1_Calculator
 
                     if (int.TryParse(multiplyNumber1, out int mulNumOne) && int.TryParse(multiplyNumber2, out int mulNumTwo))
                     {
-                        Console.Write($"{multiplyNumber1} - {multiplyNumber2} = ");
-                        Console.Write(calculator.Multiply(mulNumOne, mulNumTwo));
+                        Console.Write($"{multiplyNumber1} * {multiplyNumber2} = ");
+                        Console.Write(calculator.Subtract(mulNumOne, mulNumTwo));
                     }
                     else
                     {
@@ -66,10 +66,7 @@ namespace KnowledgeCheck1_Calculator
                     }
                     break;
 
-
-                    break;
-
-                case "4":
+                 case "4":
                     Console.WriteLine("Enter 2 integers to divide");
                     var divideNumber1 = Console.ReadLine();
                     var divideNumber2 = Console.ReadLine();
